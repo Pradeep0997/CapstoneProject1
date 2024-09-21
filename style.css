@@ -1,0 +1,218 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* hero background image */
+.bgimage{
+    margin-top: 0px;
+    padding-top: 340px;
+    height: 100vh ;
+    background: url('portfolioImage3.jpeg');
+   background-size: cover;
+   
+    position: relative;
+}
+
+/* text css above hero image*/
+.hero_title{
+    font-size: 2.5rem;
+    color: black;
+}
+.hero_desc{
+    font-size: 1rem;
+    color:rgb(220, 245, 225);
+}
+.hero_text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+/* social media icons styling*/
+.social-icons{
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+    
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: whitesmoke;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 1%;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+.imageAboutPage {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+header{
+    padding: 1.8em;
+    background-color:grey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+   
+
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav-ist {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--clr-accent);
+}
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburguer {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburguer::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburguer::after {
+    opacity: 0;
+}
+
+/*Projects */ 
+.contain {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+}
+
+.project-info p {
+    color: #555;
+}
